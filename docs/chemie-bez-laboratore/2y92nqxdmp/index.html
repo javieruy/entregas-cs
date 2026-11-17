@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Chemie bez laboratoře</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* HUB DE ENTREGA: la única URL que recibe el comprador. Sin OTOs, sin contactos, noindex. */
+:root{--bg:#F4F6FB;--paper:#FFFFFF;--ink:#14213D;--ink-soft:#4A5873;--accent:#16306A;--accent-dark:#0E2147;--line:#DCE3F0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:'Inter',-apple-system,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Oswald',Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.hero{background:linear-gradient(160deg,var(--accent-dark),var(--accent));color:var(--paper);padding:48px 0 64px;text-align:center}
+.hero .kicker{display:inline-block;border:1px solid rgba(255,255,255,.5);border-radius:99px;padding:5px 14px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:clamp(28px,6vw,48px);margin-bottom:10px}
+.hero p{font-size:18px;opacity:.93;max-width:640px;margin:0 auto}
+.stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+.stats span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:99px;padding:8px 16px;font-weight:700;font-size:15px}
+.core{position:relative;margin:-36px auto 36px;background:var(--paper);border:2px solid var(--accent);border-radius:20px;padding:26px;display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:center;box-shadow:0 18px 40px rgba(0,0,0,.10)}
+.core img{width:100%;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.18);display:block}
+.core .ph{aspect-ratio:2/3;border-radius:10px;background:linear-gradient(160deg,var(--accent),var(--accent-dark))}
+.tag{display:inline-block;background:var(--accent);color:var(--paper);border-radius:99px;padding:4px 12px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.core h2{font-size:clamp(22px,4vw,32px);margin-bottom:8px}
+.core p{color:var(--ink-soft);margin-bottom:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 26px;border-radius:12px;background:var(--accent);color:var(--paper);font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 4px 0 var(--accent-dark)}
+.btn:hover{filter:brightness(1.05)}
+.sec{margin:0 0 40px}
+.sec h2{font-size:clamp(22px,4vw,30px);margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:transform .12s,border-color .12s}
+.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card .n{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.card h3{font-size:19px}
+.card p{color:var(--ink-soft);font-size:15px;flex:1}
+.card .go{font-weight:800;color:var(--accent-dark)}
+.card .btn{width:100%;min-height:46px;padding:10px 16px;font-size:16px}
+.acciones{display:inline-flex;flex-direction:column;align-items:stretch}
+.card .acciones{display:flex}
+.ver{display:block;margin-top:10px;font-weight:800;color:var(--accent-dark);text-decoration:none;text-align:center}
+.card .ver{margin-top:8px}
+.pasos{counter-reset:p;list-style:none;display:grid;gap:10px}
+.pasos li{counter-increment:p;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 58px;position:relative}
+.pasos li::before{content:counter(p);position:absolute;left:14px;top:12px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--paper);font-weight:800;display:flex;align-items:center;justify-content:center}
+.foot{text-align:center;color:var(--ink-soft);font-size:13px;padding:10px 0 40px}
+@media (max-width:640px){.core{grid-template-columns:1fr;text-align:center;padding:20px}.core img,.core .ph{max-width:170px;margin:0 auto}.btn{width:100%}.acciones{display:flex}}
+.btn,.btn.primary{background:#F5B70A;color:#0E2147;box-shadow:0 4px 0 #C38F00}.btn:hover{background:#FFD45C}.card .n,.tag{color:#B07D00}.tag{background:#F5B70A;color:#0E2147}</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Vítejte · Chemie bez laboratoře</span>
+    <h1>Chemie bez laboratoře</h1>
+    <p>150 karet pokusů k vytištění v 5 knihách a 6 bonusů zdarma. Stáhněte, vytiskněte, učte.</p>
+    <div class="stats"><span>150 pokusů</span><span>5 knih</span><span>6 bonusů zdarma</span></div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="sec" style="margin-top:32px"><h2>Hlavní produkt</h2><div class="grid"><div class="card"><span class="n">1. kniha</span><h3>Chemie bez laboratoře · 1. kniha · Obecná chemie</h3><p>30 pokusů, každý na jednostránkové kartě k vytištění: materiál, 6 ilustrovaných kroků, vědecké vysvětlení, výsledek a bezpečnostní poznámka.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/tyswzney2k/chemie-bez-laboratore-1-obecna-chemie.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/tyswzney2k/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">2. kniha</span><h3>Chemie bez laboratoře · 2. kniha · Organická chemie a biochemie</h3><p>30 pokusů, každý na jednostránkové kartě k vytištění: materiál, 6 ilustrovaných kroků, vědecké vysvětlení, výsledek a bezpečnostní poznámka.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/u2nelon1zl/chemie-bez-laboratore-2-organicka-chemie-a-biochemie.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/u2nelon1zl/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">3. kniha</span><h3>Chemie bez laboratoře · 3. kniha · Kyseliny, zásady a kovy</h3><p>30 pokusů, každý na jednostránkové kartě k vytištění: materiál, 6 ilustrovaných kroků, vědecké vysvětlení, výsledek a bezpečnostní poznámka.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/oke31j5wbr/chemie-bez-laboratore-3-kyseliny-zasady-a-kovy.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/oke31j5wbr/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">4. kniha</span><h3>Chemie bez laboratoře · 4. kniha · Fyzikální chemie</h3><p>30 pokusů, každý na jednostránkové kartě k vytištění: materiál, 6 ilustrovaných kroků, vědecké vysvětlení, výsledek a bezpečnostní poznámka.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/tghfkkcxrp/chemie-bez-laboratore-4-fyzikalni-chemie.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/tghfkkcxrp/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">5. kniha</span><h3>Chemie bez laboratoře · 5. kniha · Chemie životního prostředí</h3><p>30 pokusů, každý na jednostránkové kartě k vytištění: materiál, 6 ilustrovaných kroků, vědecké vysvětlení, výsledek a bezpečnostní poznámka.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/22b50n3ug8/chemie-bez-laboratore-5-chemie-zivotniho-prostredi.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/22b50n3ug8/" target="_blank" rel="noopener">Otevřít →</a></div></div></div></section>
+  <section class="sec"><h2>6 bonusů zdarma</h2><div class="grid"><div class="card"><span class="n">1. bonus</span><h3>Sada pro projektový den: naplánujte, představte, vyhrajte</h3><p>4týdenní harmonogram, 10 efektních projektů, plán plakátu, popisky a hodnoticí kritéria poroty.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/w4vpyyjzhg/chemie-bez-laboratore-bonus-1-sada-pro-projektovy-den.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/w4vpyyjzhg/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">2. bonus</span><h3>Příručka laboratorní bezpečnosti ve třídě + souhlas rodičů</h3><p>Pravidla podle typu pokusu, kontrolní seznam před pokusem a šablona souhlasu.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/zlbb0p69sc/chemie-bez-laboratore-bonus-2-laboratorni-bezpecnost-ve-tride.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/zlbb0p69sc/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">3. bonus</span><h3>Obrázková periodická tabulka prvků + 12 infografik do třídy</h3><p>Periodická tabulka ve velikosti plakátu s ukázkami využití prvků v běžném životě a k tomu 12 plakátů na vaše stěny.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/kqjuqli1rl/chemie-bez-laboratore-bonus-3-periodicka-tabulka-infografiky.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/kqjuqli1rl/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">4. bonus</span><h3>Celoroční plán výuky chemie, editovatelné PDF + Word</h3><p>36 týdnů, každý týden jeden pokus. PDF + editovatelný soubor Word.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/a8j8ouz1nv/chemie-bez-laboratore-bonus-4-celorocni-plan-chemie.pdf" download>⬇ Stáhnout PDF</a><a class="btn" style="margin-top:8px" href="../../chemie-bez-laboratore/a8j8ouz1nv/chemie-bez-laboratore-bonus-4-celorocni-plan-chemie.docx" download>⬇ Stáhnout soubor Word</a><a class="ver" href="../../chemie-bez-laboratore/a8j8ouz1nv/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">5. bonus</span><h3>Hodnoticí archy a kritéria pro praktické hodiny</h3><p>Pozorovací listy, šablona „tvrzení–důkaz–zdůvodnění“, hodnoticí škála se 4 úrovněmi, kontrolní seznam skupiny a výstupní lístky.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/xd9g4b1m2m/chemie-bez-laboratore-bonus-5-hodnotici-archy.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/xd9g4b1m2m/" target="_blank" rel="noopener">Otevřít →</a></div></div><div class="card"><span class="n">6. bonus</span><h3>100 opakovacích karet z chemie</h3><p>100 karet k vystřižení, 4 na stránce: to nejdůležitější z každého tématu, klíčový vzorec nebo rovnice a to, na co žáci často zapomínají.</p><div class="acciones"><a class="btn" href="../../chemie-bez-laboratore/rxajibmyvo/chemie-bez-laboratore-bonus-6-opakovaci-karty-z-chemie.pdf" download>⬇ Stáhnout PDF</a><a class="ver" href="../../chemie-bez-laboratore/rxajibmyvo/" target="_blank" rel="noopener">Otevřít →</a></div></div></div></section>
+  <section class="sec"><h2>Další krok</h2><ol class="pasos"><li>Stáhněte si 5 knih a 6 bonusů do počítače nebo telefonu.</li><li>Vyberte kartu pokusu na příští hodinu: v obsahu každé knihy najdete pokusy podle úrovně a času.</li><li>Přečtěte si bezpečnostní poznámku na kartě a projděte kontrolní seznam před pokusem ze 2. bonusu.</li><li>Naplánujte si celý rok v souboru Word ze 4. bonusu a hodnoťte žáky pomocí archů z 5. bonusu.</li><li>Opakovací karty z 6. bonusu používejte na začátku nebo na konci hodiny a před písemkami.</li></ol></section>
+  <p class="foot">Pouze pro osobní potřebu a vaši vlastní výuku. Další prodej a šíření jsou zakázány.</p>
+</main>
+</body>
+</html>
